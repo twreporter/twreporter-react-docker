@@ -26,8 +26,8 @@ RUN buildDeps=' \
     && cp /config.js ./api/ \
     && cp -rf . .. \
     && cd .. \
-    && npm install \
     && rm -rf twreporter-react \
+    && npm install \
     && npm install forever \
     && npm run build
 
