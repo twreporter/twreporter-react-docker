@@ -23,10 +23,10 @@ RUN buildDeps=' \
     && cd twreporter-react \
     && git checkout revamp \
     && git pull \
-    && npm install \
     && cp /config.js ./api/ \
     && cp -rf . .. \
     && cd .. \
+    && npm install \
     && rm -rf twreporter-react \
     && npm install forever \
     && npm run build
