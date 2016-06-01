@@ -22,8 +22,8 @@ RUN buildDeps=' \
     && git clone https://github.com/twreporter/twreporter-react.git \
     && cd twreporter-react \
     && git checkout revamp \
-    && npm install \
     && git pull \
+    && npm install \
     && cp /config.js ./api/ \
     && cp -rf . .. \
     && cd .. \
