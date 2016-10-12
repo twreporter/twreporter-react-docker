@@ -21,7 +21,7 @@ RUN buildDeps=' \
     && apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \
     && git clone https://github.com/twreporter/twreporter-react.git \
     && cd twreporter-react \
-    && git checkout master \
+    && git checkout preview \
     && git pull \
     && cp /config.js ./api/ \
     && cp -rf . .. \
